@@ -5,34 +5,11 @@ export default {
   type: 'document',
   title: 'Report',
   fields: [
-    // {
-    //   name: 'id',
-    //   type: 'number',
-    //   title: 'ID',
-    //   validation: (Rule: Rule) => Rule.required(),
-    // },
-    // {
-    //   name: 'date',
-    //   type: 'datetime',
-    //   title: 'Date',
-    //   validation: (Rule: Rule) => Rule.required(),
-    // },
     {
       name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule: Rule) => Rule.required(),
-    },
-    // {
-    //   name: 'ticker',
-    //   type: 'string',
-    //   title: 'Ticker',
-    //   validation: (Rule: Rule) => Rule.required(),
-    // },
-    {
-      name: 'tag',
-      type: 'string',
-      title: 'Tag',
     },
     {
       name: 'company',
