@@ -31,6 +31,19 @@ export default {
       validation: (Rule: Rule) => Rule.required(),
     },
     {
+      name: 'releaseDate',
+      type: 'datetime',
+      title: 'Release Date',
+      description: 'The date when the report is/was released',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+        timeFormat: 'HH:mm',
+        timeStep: 15,
+      },
+      initialValue: () => new Date().toISOString(),
+      validation: (Rule: Rule) => Rule.required(),
+    },
+    {
       name: 'file',
       type: 'file',
       title: 'PDF File',
