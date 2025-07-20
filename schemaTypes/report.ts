@@ -25,9 +25,9 @@ export default {
       of: [{type: 'string'}],
       options: {
         list: [
-          {title: 'Hlutabref (Equities)', value: 'hlutabref'},
-          {title: 'Skuldabref (Bonds)', value: 'skuldabref'},
-          {title: 'Hagkerfi (Economy)', value: 'hagkerfi'},
+          {title: 'Hlutabréf', value: 'hlutabref'},
+          {title: 'Skuldabréf', value: 'skuldabref'},
+          {title: 'Hagkerfi', value: 'hagkerfi'},
         ],
       },
       validation: (Rule: Rule) => Rule.min(1).error('At least one category is required'),
